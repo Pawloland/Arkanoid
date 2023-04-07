@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/styles_game.css">
+    <title>Arkanoid - gra</title>
+    <script src="/static/js/game/main.js" type="module"></script>
+</head>
+
+<body>
+    <div id="file_picker">
+        <span>Wybierz plik json z levelem: </span>
+        <input type="file" accept="application/json" multiple="false">
+    </div>
+    <button onclick="alert('Paused')">Pause</button>
+    <label>
+        Frame skipper: <span id="frame_skipper_value"></span><br>
+        <input type="range" min="0" value="0" max="120" step="1" id="frame_skipper" oninput="document.getElementById('frame_skipper_value').innerText = event.currentTarget.value"></input>
+
+        <script>
+            // document.getElementById('frame_skipper').value = 0 // resetuje inputy po każdym reloadzie strony (czyści cache)
+            // setInterval(() => { document.getElementById('frame_skipper_value').innerText = document.getElementById('frame_skipper').value }, 500)
+            // document.getElementById('frame_skipper_value').innerText = document.getElementById('frame_skipper').value
+        </script>
+    </label>
+    <canvas id="playboard" class="contain" width="128" height="128"></canvas>
+</body>
+
+</html>

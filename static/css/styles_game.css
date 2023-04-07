@@ -1,0 +1,78 @@
+html {
+    font-family: sans-serif;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-shadow:
+     1px  1px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+canvas {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+canvas.contain {
+    background-color:initial;
+    /* 
+      To jest klasa która nie zmiania nic dla canvasa bez podpiętego skryptu js
+      background-color: initial -> ustaione tylko po to, 
+      żeby nie było warningów o pustej klasie, w vs code, bo de factio 
+      taki styl nie powinien nic zmienić w wyglądzie danego canvasa
+      Skrypt js wykrywa każdy element canvas z klasą css contain i gdy
+      parent element tego taga canvas się zresizeuje to wymiary canvasa 
+      zostaną odpowiednio ponownie przeliczone na wartości procentowe.
+    */
+}
+
+#file_picker{
+    position: absolute;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#file_picker > * {
+    padding: 20px;
+}
+
+
+button {
+    position: fixed;
+    right:10px;
+    bottom: 60px;
+    /* display:none; */
+}
+
+label{
+    user-select: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    /* display: none; */
+}
