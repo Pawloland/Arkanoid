@@ -9,7 +9,7 @@ export default class Images {
                 Images.array.map(name => {
                     return new Promise((resolve, reject) => {
                         let newImage = new Image
-                        newImage.src = `/static/img/${name}.png`
+                        newImage.src = `./static/img/${name}.png`
                         newImage.addEventListener('load', () => {
                             resolve([name, newImage])
                         })
