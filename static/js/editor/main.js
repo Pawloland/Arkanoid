@@ -1,12 +1,12 @@
-import ifLog from '/static/js/consoleLogWrapper.js'
-import CreateTable from '/static/js/editor/createTable.js'
-import CanvasImage from '/static/js/canvasImage.js'
-import Images from '/static/js/images.js'
-import Config from '/static/js/editor/config.js'
-import Keyboard from '/static/js/editor/keyboard.js'
-import SelectionActions from '/static/js/editor/selectionActions.js'
-import History from '/static/js/editor/history.js'
-import FileParser from '/static/js/editor/fileParser.js'
+import ifLog from '../consoleLogWrapper.js'
+import CreateTable from './createTable.js'
+import CanvasImage from '../canvasImage.js'
+import Images from '../images.js'
+import Config from './config.js'
+import Keyboard from './keyboard.js'
+import SelectionActions from './selectionActions.js'
+import History from './history.js'
+import FileParser from './fileParser.js'
 
 window.onload = async function () {
     await Images.loadImages()

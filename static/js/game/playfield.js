@@ -1,7 +1,7 @@
-import ifLog from '/static/js/consoleLogWrapper.js'
-import Images from '/static/js/images.js'
-import CanvasImage from '/static/js/canvasImage.js'
-import Config from '/static/js/game/config.js'
+import ifLog from '../consoleLogWrapper.js'
+import Images from '../images.js'
+import CanvasImage from '../canvasImage.js'
+import Config from './config.js'
 
 export default class Playfield {
     constructor() {

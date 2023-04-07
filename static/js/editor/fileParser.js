@@ -1,6 +1,6 @@
-import ifLog from '/static/js/consoleLogWrapper.js'
-import Config from '/static/js/editor/config.js'
-import CanvasImage from '/static/js/canvasImage.js'
+import ifLog from '../consoleLogWrapper.js'
+import Config from './config.js'
+import CanvasImage from '../canvasImage.js'
 
 export default class FileParser {
     constructor(selection_actions, history) {

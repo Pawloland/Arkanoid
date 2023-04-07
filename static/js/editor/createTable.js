@@ -1,4 +1,4 @@
-import ifLog from '/static/js/consoleLogWrapper.js'
+import ifLog from '../consoleLogWrapper.js'
 
 export default class CreateTable {
     constructor(rows, columns, id, constructor_td_callback = () => { }) {

@@ -1,10 +1,10 @@
-import ifLog from '/static/js/consoleLogWrapper.js'
-import CanvasResizer from '/static/js/game/canvasResizer.js'
-import Playfield from '/static/js/game/playfield.js'
-import Images from '/static/js/images.js'
-import FileLoader from '/static/js/game/fileLoader.js'
-import Keyboard from '/static/js/game/keyboard.js'
-// import json from '/static/js/game/exportedPlayboard.js'
+import ifLog from '../consoleLogWrapper.js'
+import CanvasResizer from './canvasResizer.js'
+import Playfield from './playfield.js'
+import Images from '../images.js'
+import FileLoader from './fileLoader.js'
+import Keyboard from './keyboard.js'
+// import json from './exportedPlayboard.js'
 
 window.onload = async function () {
     await Images.loadImages()

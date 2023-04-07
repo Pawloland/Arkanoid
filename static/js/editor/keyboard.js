@@ -1,5 +1,5 @@
-import Config from "/static/js/editor/config.js"
-import ifLog from '/static/js/consoleLogWrapper.js'
+import Config from "./config.js"
+import ifLog from '../consoleLogWrapper.js'
 
 export default class Keyboard {
     constructor(selection_actions, file_parser, history) {

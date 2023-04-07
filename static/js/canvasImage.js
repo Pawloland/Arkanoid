@@ -1,5 +1,5 @@
-import ifLog from '/static/js/consoleLogWrapper.js'
-import Images from '/static/js/images.js'
+import ifLog from './consoleLogWrapper.js'
+import Images from './images.js'
 
 export default class CanvasImage {
     constructor(sx, sy, sWidth, sHeight, source) {
